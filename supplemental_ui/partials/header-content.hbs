@@ -1,0 +1,45 @@
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="{{uiRootPath}}/img/docs_logo.png" style="height: auto">
+      <a class="navbar-item" href="#">{{site.title}}</a>
+      {{#if env.DOCSEARCH_ENABLED}}
+        <div class="navbar-item">
+          <input id="search-input" type="text" placeholder="Vyhledávat">
+        </div>
+      {{/if}}
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Domů</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Produkty</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Něco</a>
+            <a class="navbar-item" href="#">Něco</a>
+            <a class="navbar-item" href="#">Něco</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Služby</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Něco</a>
+            <a class="navbar-item" href="#">Něco</a>
+            <a class="navbar-item" href="#">Něco</a>
+          </div>
+        </div>
+        <a class="navbar-item" href="https://twitter.com/">
+          <span class="icon">
+            <img src="{{uiRootPath}}/img/twitter-logo-white.svg" style="height: auto">
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
